@@ -1,0 +1,69 @@
+{
+  "mode": "umis",
+  "ablated": [],
+  "n_attack": 1700,
+  "n_benign": 1600,
+  "attack_allowed_rate": 0.4511764705882353,
+  "benign_block_rate": 0.044375,
+  "l2_escalation_rate": 0.693030303030303,
+  "per_probe": {
+    "p_file": {
+      "tp": 400,
+      "fp": 100,
+      "fn": 500,
+      "tn": 2300,
+      "precision": 0.8,
+      "recall": 0.4444444444444444,
+      "f1": 0.5714285714285714
+    },
+    "p_content": {
+      "tp": 230,
+      "fp": 117,
+      "fn": 1770,
+      "tn": 1183,
+      "precision": 0.6628242074927954,
+      "recall": 0.115,
+      "f1": 0.19599488708990204
+    },
+    "p_intent": {
+      "tp": 787,
+      "fp": 496,
+      "fn": 913,
+      "tn": 1104,
+      "precision": 0.6134060795011691,
+      "recall": 0.46294117647058824,
+      "f1": 0.5276567214213879
+    }
+  },
+  "per_placement": {
+    "content": {
+      "n": 600,
+      "detected": 423,
+      "rate": 0.705
+    },
+    "container_metadata": {
+      "n": 500,
+      "detected": 237,
+      "rate": 0.474
+    },
+    "signal": {
+      "n": 400,
+      "detected": 73,
+      "rate": 0.1825
+    },
+    "semantic_only": {
+      "n": 100,
+      "detected": 100,
+      "rate": 1.0
+    },
+    "mixed": {
+      "n": 100,
+      "detected": 100,
+      "rate": 1.0
+    }
+  },
+  "verdict_counts": {
+    "BLOCK": 1004,
+    "ALLOW+AUDIT": 2296
+  }
+}

@@ -1,0 +1,10 @@
+include LICENSE README.md README.zh-CN.md CHANGELOG.md
+include run_all.sh .env.example
+recursive-include docs *.md
+recursive-include tests *.py
+recursive-include bench *.py
+recursive-include attacks *.py
+recursive-include harness *.py
+recursive-include results/reference *.json *.md
+global-exclude *.py[cod]
+global-exclude __pycache__
